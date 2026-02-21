@@ -1,0 +1,30 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    # ===== BUILD =====
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Build Docker Image
+      run: docker build -t tic-tac-toe .
+
+    # ===== DEPLOY =====
+    - name: Deploy App
+      run: |
+        docker compose up -d
+        sleep 10
+
+    # ===== TEST =====
+    - name: Run Tests
+      run: pytest tests/ || exit 1
