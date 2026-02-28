@@ -1,0 +1,4 @@
+[2026-02-28 04:49:20Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2026-02-28 04:49:20Z INFO HostContext] Well known directory 'Bin': 'D:\New folder (2)\muhammadsabeh\tic-tac-toe\actions-runner\bin'
+[2026-02-28 04:49:20Z INFO HostContext] Well known directory 'Root': 'D:\New folder (2)\muhammadsabeh\tic-tac-toe\actions-runner'
+[2026-02-28 04:49:20Z INFO HostContext] Well known config file 'Credentials': 'D:\New folder (2)\muhammadsabeh\tic-tac-toe\actions-runner\.credentials'
